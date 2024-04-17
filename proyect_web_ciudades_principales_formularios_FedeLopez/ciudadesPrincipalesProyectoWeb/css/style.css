@@ -1,0 +1,84 @@
+/* Aplica la fuente Arial, Helvetica, sans-serif a todos los elementos del documento */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estiliza el título de la sección de ciudades, centrando el texto */
+#tituloCiudadesCard {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Establece el ancho máximo, márgenes, padding, color de fondo, 
+bordes redondeados y sombra para la sección principal */
+#principalesCiudades {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Define el contenedor de la tarjeta de ciudades con un margen izquierdo */
+#principalesCiudadesCard {
+    display: flexbox;
+    margin-left: 2.3rem;
+
+}
+
+/* Estiliza la lista de ciudades con un diseño de cuadrícula*/
+#ulPrincipalesCiudadesGrid {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, 160px);
+    column-gap: 18px;
+    row-gap: 15px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Estiliza cada tarjeta de ciudad con bordes redondeados,
+ sombra, color de fondo y disposición flex */
+.PrinCiudadesMiniCard {
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(205, 231, 255);
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+/* Define el estilo y disposición del texto y temperatura dentro de cada tarjeta de ciudad */
+.colLiCardTxt {
+    width: calc(100% - 2.3rem);
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Estiliza el icono dentro de la tarjeta de ciudad con un margen derecho */
+.icon {
+    display: block;
+    margin-right: .5rem;
+}
+
+/* Estiliza la fila de temperaturas máxima y mínima con un margen superior */
+.rowTemp {
+    margin-top: .5rem;
+}
+
+/* Estiliza la temperatura máxima con color rojo */
+.maxima {
+    color: red;
+
+}
+
+/* Estiliza la temperatura mínima con color azul y un margen izquierdo */
+.minima {
+    color: blue;
+    margin-left: .5rem;
+}
