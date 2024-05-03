@@ -5,7 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/fotos/fondo01.jpg);
+  /*background-image: url(/imagenes/fondo01.jpg);*/
+  background-image: url(/fondo01.jpg);
   background-size: cover;
 }
 
