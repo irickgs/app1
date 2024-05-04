@@ -18,7 +18,9 @@ body {
 
 nav {
   padding: 10px 0;
-} 
+  font-size: 70%;
+  display: flexbox;
+}
 
 nav ul {
   list-style-type: none;
@@ -36,13 +38,11 @@ nav ul li a {
   padding: 10px 20px;
 }
 
-
-
 header {
   /*color: #a79ac4;*/
   padding: 40px 0;
   text-align: center;
-  
+
   /*height: 10vh;
   display: flex;
   justify-content: center;
@@ -90,16 +90,16 @@ p {
 .enlaces-container {
   display: flex;
   justify-content: space-between;
-  margin-left: 5cm; 
-  margin-right: 5cm; 
+  margin-left: 5cm;
+  margin-right: 5cm;
 }
 
 .enlace-izquierda {
-  order: 1; 
+  order: 1;
 }
 
 .enlace-derecha {
-  order: 2; 
+  order: 2;
 }
 
 .search-box {
@@ -142,9 +142,9 @@ p {
   max-width: 80px;
   width: 100%;
   padding: 20px;
-  background-color: #ad97c5; 
+  background-color: #ad97c5;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #contenedor {
   text-align: center;
@@ -180,7 +180,7 @@ p {
   #caja1 {
     background-color: rgba(1, 21, 24, 0.767);
     color: azure;
-
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
@@ -189,4 +189,16 @@ p {
 
 @media only screen and (max-width: 599px) {
   /* Estilos para dispositivos móviles */
+  nav {
+    font-size: 45%;
+  }
+  #caja1,
+  #caja2,
+  #caja3 {
+    text-align: center;
+    font-size: 30%;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+  }
 }
