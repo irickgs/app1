@@ -6,13 +6,14 @@ body {
   margin: 0;
   padding: 0;
   /*background-image: url(/imagenes/fondo01.jpg);*/
-  background-image: url(/fondo01.jpg);
+  /*background-image: url(/fondo01.jpg);*/
+  background-image: url(../imagenes/fondo01.jpg);
   background-size: cover;
 }
 
 nav {
   padding: 10px 0;
-}
+} 
 
 nav ul {
   list-style-type: none;
