@@ -2,6 +2,11 @@
   font-size: 32px;
 }
 
+/*html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}*/
+
 body {
   margin: 0;
   padding: 0;
@@ -34,14 +39,21 @@ nav ul li a {
 
 
 header {
-  color: #fff;
+  /*color: #a79ac4;*/
   padding: 40px 0;
   text-align: center;
+  
+  /*height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;*/
 }
 main {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
+
+  /*height: 80vh;*/
 }
 
 h1 {
@@ -151,7 +163,7 @@ p {
 }
 
 #caja1 {
-  background-color: rgba(0, 0, 0, 0.767);
+  background-color: rgba(147, 171, 174, 0.767);
   color: azure;
 }
 #caja2 {
@@ -161,4 +173,20 @@ p {
 #caja3 {
   background-color: #2ab2ea;
   color: azure;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Estilos para PC de escritorio */
+  #caja1 {
+    background-color: rgba(1, 21, 24, 0.767);
+    color: azure;
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* Estilos para tablet */
+}
+
+@media only screen and (max-width: 599px) {
+  /* Estilos para dispositivos móviles */
 }
