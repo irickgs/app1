@@ -1,6 +1,6 @@
-:root {
+/*:root {
  
-}
+}*/
 
 /*html {
   font-family: Arial, Helvetica, sans-serif;
@@ -26,20 +26,43 @@ header{
 
 
 nav {
-  padding: 10px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  /*padding: 10px 0;
   font-size: 70%;
-  display: flexbox;
+  display: flexbox;*/
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: right;
 }
 nav ul li {
-  display: inline;
+  display: inline-block;
 }
+
+nav ul li:first-child{
+  margin-left:0;
+}
+
+nav ul li :last-child{
+  margin-right: 1vw;
+}
+
+nav ul li a, nav>a{
+  display:block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color:darkblue;
+  transition:backgraund-color 0.5s ;
+}
+nav ul li a:hover{
+  background-color:rgb(182, 199, 235, 30%);
+}
+
 
 nav ul li a {
   color: #fff;
@@ -49,8 +72,8 @@ nav ul li a {
 
 header {
   /*color: #a79ac4;*/
-  padding: 40px 0;
-  text-align: center;
+  /*padding: 40px 0;*/
+  /*text-align: center;*/
 
   /*height: 10vh;
   display: flex;
