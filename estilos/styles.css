@@ -146,7 +146,30 @@ p {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#contenedor {
+
+.cajas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  font-size: 0.5em;
+  /*overflow-wrap: break-word;*/
+}
+
+/*#cajas {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -156,7 +179,7 @@ p {
 #caja1,
 #caja2,
 #caja3 {
-  text-align: center;
+  /*text-align: center;*//*
   width: 200px;
   height: 200px;
   margin: 0 10px;
@@ -174,13 +197,14 @@ p {
   background-color: #2ab2ea;
   color: azure;
 }
+*/
 
 @media only screen and (min-width: 1024px) {
   /* Estilos para PC de escritorio */
-  #caja1 {
+  /*#caja1 {
     background-color: rgba(1, 21, 24, 0.767);
     color: azure;
-  }
+  }*/
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
@@ -192,7 +216,7 @@ p {
   nav {
     font-size: 45%;
   }
-  #caja1,
+  /*#caja1,
   #caja2,
   #caja3 {
     text-align: center;
@@ -200,5 +224,12 @@ p {
     width: 60px;
     height: 60px;
     margin: 0 10px;
+  }*/
+  .cajas {
+    flex-direction: column; /* cambia la dirección de los elementos a vertical */
+  }
+  .caja {
+    height: 25%;
+    width: 25%;
   }
 }
