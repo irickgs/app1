@@ -1,5 +1,5 @@
 :root {
-  font-size: 32px;
+ 
 }
 
 /*html {
@@ -7,14 +7,23 @@
   font-weight: bolder;
 }*/
 
-body {
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100vh;
   /*background-image: url(/imagenes/fondo01.jpg);*/
   /*background-image: url(/fondo01.jpg);*/
   background-image: url(../imagenes/fondo01.jpg);
   background-size: cover;
+
 }
+
+header{
+  background-color:rgb(182, 199, 235, 30%) ;
+  padding: 2vh 0;
+}
+
 
 nav {
   padding: 10px 0;
