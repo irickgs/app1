@@ -92,7 +92,8 @@ h1 {
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2em;
-  color: aquamarine;
+  color: rgb(238, 244, 245);
+  display: block;
 }
 
 h2 {
