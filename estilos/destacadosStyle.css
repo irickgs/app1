@@ -1,3 +1,17 @@
+:root {
+    /*Se escogio una paleta de color monocromatica*/
+    --bg-color: #2B2E33;
+      --primary-color:#2063C0;
+      --secondary-color:#325B96 ;
+      --third-color:#0062EB ;
+      --third-bis-color: #3D41C0;
+      --bg-input-color:#364C6B;
+      --bg-principalesCiudades-color:#79c9ff71;
+      --bg-prinCiudadesMiniCard-color:#93c4f1;
+
+   
+  }
+
 /* Aplica la fuente Arial, Helvetica, sans-serif a todos los elementos del documento */
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -41,12 +55,10 @@ bordes redondeados y sombra para la sección principal */
 /* Estiliza cada tarjeta de ciudad con bordes redondeados,
  sombra, color de fondo y disposición flex */
 .PrinCiudadesMiniCard {
-
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: rgb(205, 231, 255);
+    background-color: #93c4f1;
     display: flex;
-
     align-items: center;
 
 }
@@ -79,6 +91,6 @@ bordes redondeados y sombra para la sección principal */
 
 /* Estiliza la temperatura mínima con color azul y un margen izquierdo */
 .minima {
-    color: blue;
+    color: var(--secondary-color);
     margin-left: .5rem;
 }
