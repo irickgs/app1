@@ -16,16 +16,17 @@
   font-weight: bolder;
 }*/
 
-body, html {
+body,html {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  /*height: 100vh;*/
   /*background-image: url(/imagenes/fondo01.jpg);*/
   /*background-image: url(/fondo01.jpg);*/
-  /*background-image: url(../imagenes/fondo01.jpg);*/
-  /*background-size:cover;*/
-  background-color: #f6f1f1;
+  background-image: url(../imagenes/fondo01.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+ /* background-color: #f6f1f1;*/
 
 }
 
@@ -90,12 +91,13 @@ header {
   justify-content: center;
   align-items: center;*/
 }
-main {
+/*main {
   max-width: 800px;
   margin: 0px auto;
   padding: 10px;
-  /*height: 80vh;*/
-}
+  background-color: ;
+  /*height: 80vh;*//*
+}*/
 
 h1 {
   margin-bottom: 20px;
