@@ -22,8 +22,8 @@ body,html {
   padding: 0;
   /*height: 100vh;*/
   /*background-image: url(/imagenes/fondo01.jpg);*/
-  /*background-image: url(/fondo01.jpg);*/
-  background-image: url(../imagenes/fondo01.jpg);
+  background-image: url(../imagenes/bg/nature-colorful-landscape-dusk-cloud.jpg);
+  /*background-image: url(../imagenes/fondo01.jpg);*/
   background-size:cover;
   background-repeat:no-repeat;
  /* background-color: #f6f1f1;*/
