@@ -11,16 +11,17 @@
     
 }
 
-/*html {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-}*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
 
 body,html {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  /*height: 100vh;*/
+  min-height: 100vh;
   /*background-image: url(/imagenes/fondo01.jpg);*/
   background-image: url(../imagenes/bg/nature-colorful-landscape-dusk-cloud.jpg);
   /*background-image: url(../imagenes/fondo01.jpg);*/
@@ -28,6 +29,13 @@ body,html {
   background-repeat:no-repeat;
  /* background-color: #f6f1f1;*/
 
+}
+
+main{
+  min-height: 100vh;
+  border: 10px solid;
+  border-color: #364c6b56;
+  
 }
 
 header{
@@ -224,12 +232,16 @@ p {
 
 footer{
   background-color: var(--bg-color);
-  position:sticky;
+  display: grid;
+  place-items: center;
+  text-align: center;
   padding: 1vh 0;
   padding-bottom: 0;
   margin-bottom: 0;
-
 }
+
+
+
 /*
 .navFooter{
   display:flex;
