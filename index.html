@@ -19,14 +19,16 @@
 <body>
 
     <header>
-       <!--<div class="enlaces-container">
+        <!--<div class="enlaces-container">
             <a href="./index.html" class="enlace-izquierda"> Home</a>
             <a href="./index.html" class="enlace-derecha"> Login</a>
         </div>
-        <h1> Clima 360</h1>--> 
+        <h1> Clima 360</h1>-->
 
         <nav>
-            <a href="#"><h1>Clima 360</h1></a>
+            <a href="#">
+                <h1 id="mainTitle">Clima 360</h1>
+            </a>
             <div class="search-box">
                 <input type="text" placeholder="Buscar ciudad...">
                 <button type="submit"><img src="./imagenes/lupa.png" alt="Search"></button>
@@ -36,8 +38,8 @@
                 <li><a href="/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-       
-        
+
+
         <!-- <div id="cajas">
             <div id="caja1">
                 <h1 id="temperatura-valor"></h1>
@@ -59,22 +61,54 @@
             <input type="text" placeholder="Buscar...">
             <button type="submit"><img src="./imagenes/lupa.png" alt="Search"></button>
         </div><br><br>-->
-        
-        <div class="cajas">
-            <div class="caja" id="1"><h5>Presión</h5></div>
-            <div class="caja" id="2"><h5>Temperatura</h5></div>
-            <div class="caja" id="3"> <h5>Velocidad del viento</h5></div>
-        </div>
+
+       <!-- <div class="cajas">
+            <div class="caja" id="1">
+                <h5>Presión</h5>
+            </div>
+            <div class="caja" id="2">
+                <h5>Temperatura</h5>
+            </div>
+            <div class="caja" id="3">
+                <h5>Velocidad del viento</h5>
+            </div>
+        </div>-->
+        <section class="TuCiudad">
+            <h2 class="sectionTitle"> Tiempo en tu ciudad</h2>
+            <div class="tarjetaTuCiudad">
+                <div class="tuCiudadCard">
+                    <span id="descripcion">Chaparrones dispersos</span>
+                    <div class="rowInfoActual">
+                        <span class="icon">
+                            <img src="./imagenes/imgDestacados/10.png" alt="Ico">
+                        </span>
+                        <span class="cardTxt">
+                            <span id="temp">18°c</span>
+                        </span>
+
+                            <span class="cardTxt" id="viento">
+                               11-24 km/h
+                            </span>
+                            <span  class="cardTxt" id="presion">
+                               1020 Mb
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
 
         </section>
         <section id="destacados">
-            <h2>Destacados</h2>
+            <h2 class="sectionTitle">Destacados</h2>
             <section id="principalesCiudades">
                 <div id="principalesCiudadesCard">
                     <h4 id="tituloCiudadesCard">Principales ciudades</h4>
                     <ul id="ulPrincipalesCiudadesGrid">
                         <li class="PrinCiudadesMiniCard">
-        
+
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/10.png" alt="Ico">
                             </span>
@@ -85,11 +119,11 @@
                                     <span class="minima">15°</span>
                                 </span>
                             </span>
-        
+
                         </li>
-        
+
                         <li class="PrinCiudadesMiniCard">
-        
+
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/2.png" alt="Ico">
                             </span>
@@ -100,9 +134,9 @@
                                     <span class="minima">16°</span>
                                 </span>
                             </span>
-        
+
                         </li>
-        
+
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/21a.png" alt="Ico">
@@ -114,7 +148,7 @@
                                     <span class="minima">17°</span>
                                 </span>
                             </span>
-        
+
                         </li>
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
@@ -127,9 +161,9 @@
                                     <span class="minima">17°</span>
                                 </span>
                             </span>
-        
+
                         </li>
-        
+
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/24a.png" alt="Ico">
@@ -141,10 +175,10 @@
                                     <span class="minima">12°</span>
                                 </span>
                             </span>
-        
+
                         </li>
                         <li class="PrinCiudadesMiniCard">
-        
+
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/10.png" alt="Ico">
                             </span>
@@ -155,11 +189,11 @@
                                     <span class="minima">15°</span>
                                 </span>
                             </span>
-        
+
                         </li>
-        
+
                         <li class="PrinCiudadesMiniCard">
-        
+
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/2.png" alt="Ico">
                             </span>
@@ -170,9 +204,9 @@
                                     <span class="minima">16°</span>
                                 </span>
                             </span>
-        
+
                         </li>
-        
+
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/21a.png" alt="Ico">
@@ -184,7 +218,7 @@
                                     <span class="minima">17°</span>
                                 </span>
                             </span>
-        
+
                         </li>
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
@@ -197,9 +231,9 @@
                                     <span class="minima">17°</span>
                                 </span>
                             </span>
-        
+
                         </li>
-        
+
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/24a.png" alt="Ico">
@@ -211,10 +245,10 @@
                                     <span class="minima">12°</span>
                                 </span>
                             </span>
-        
+
                         </li>
-                        
-        
+
+
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/21a.png" alt="Ico">
@@ -226,7 +260,7 @@
                                     <span class="minima">17°</span>
                                 </span>
                             </span>
-        
+
                         </li>
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
@@ -239,9 +273,9 @@
                                     <span class="minima">17°</span>
                                 </span>
                             </span>
-        
+
                         </li>
-        
+
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/24a.png" alt="Ico">
@@ -253,15 +287,16 @@
                                     <span class="minima">12°</span>
                                 </span>
                             </span>
-        
+
                         </li>
-                        
+
                     </ul>
                 </div>
             </section>
         </section>
         <section id="mapa">
-            <iframe src="https://oc.tutiempo.net/wm/es_mapa-del-tiempo_argentina_mh0.jpg" width="650" height="500" frameborder="0"></iframe>
+            <iframe src="https://oc.tutiempo.net/wm/es_mapa-del-tiempo_argentina_mh0.jpg" width="760" height="1000"
+                frameborder="0"></iframe>
 
 
         </section>
@@ -275,7 +310,8 @@
                 </li>
                 <li class="listaItem">
                     <a class="linkNav" href="#contacto">Sobre Nosotros</a>
-                </li><li class="listaItem">
+                </li>
+                <li class="listaItem">
                     <a class="linkNav" href="./FAQ.html">FAQ</a>
                 </li>
             </ul>
