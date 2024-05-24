@@ -144,7 +144,7 @@ nav ul li a {
 }
 
  .tarjetaTuCiudad{
-  max-width:400px;
+  width:450px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
@@ -164,15 +164,33 @@ nav ul li a {
 }
 
  #descripcion{
-  font-size:1.2rem;
- }
- #temp{
-  font-size: 2.5rem;
+  font-size:1.5rem;
+  margin-left: 10px;
+  text-align: center;
+
  }
 
- #viento{
-font-size: 1.2rem;
+ #temp{
+  font-size: 1.5rem;
  }
+
+ #humedad{
+  font-size: 1.5rem;
+
+ }
+
+
+
+ #viento{
+  font-size: 1.1rem;
+  margin-left: 25px;
+ }
+ #presion{
+  font-size: 1.1rem;
+  margin-left: 15px;
+ }
+
+ 
 
 #mapa {
   max-width: 800px;
