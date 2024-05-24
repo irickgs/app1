@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/styles.css">
     <link rel="stylesheet" href="./estilos/destacadosStyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Clima 360</title>
 
     <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -62,7 +63,7 @@
             <button type="submit"><img src="./imagenes/lupa.png" alt="Search"></button>
         </div><br><br>-->
 
-       <!-- <div class="cajas">
+        <!-- <div class="cajas">
             <div class="caja" id="1">
                 <h5>Presión</h5>
             </div>
@@ -83,23 +84,28 @@
                             <img src="./imagenes/imgDestacados/10.png" alt="Ico">
                         </span>
                         <span class="cardTxt">
+                            <span class="variableTitulo">Temp</span>
                             <span id="temp">18°c</span>
                         </span>
 
-                            <span class="cardTxt" id="viento">
-                               11-24 km/h
-                            </span>
-                            <span  class="cardTxt" id="presion">
-                               1020 Mb
-                            </span>
-                        </div>
+                        <span class="cardTxt">
+                        <span class ="variableTitulo">Humedad</span>
+                        <span id="humedad">78%</span>
+                        </span>
+
+                        <span class="cardTxt">
+                        <span class ="variableTitulo">Viento</span>
+                        <span class="cardTxt" id="viento">11-24 km/h</span>
+                        </span>
+                        
+                        <span class="cardTxt" id="presion">
+                            1020 Mb
+                        </span>
+
                     </div>
-
                 </div>
-
             </div>
-
-
+            </div>
         </section>
         <section id="destacados">
             <h2 class="sectionTitle">Destacados</h2>
@@ -108,7 +114,6 @@
                     <h4 id="tituloCiudadesCard">Principales ciudades</h4>
                     <ul id="ulPrincipalesCiudadesGrid">
                         <li class="PrinCiudadesMiniCard">
-
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/10.png" alt="Ico">
                             </span>
@@ -119,9 +124,67 @@
                                     <span class="minima">15°</span>
                                 </span>
                             </span>
-
                         </li>
-
+                        <li class="PrinCiudadesMiniCard">
+                            <span class="icon">
+                                <img src="./imagenes/imgDestacados/2.png" alt="Ico">
+                            </span>
+                            <span class="colLiCardTxt">
+                                <a href="">Cordoba</a>
+                                <span class="rowTemp">
+                                    <span class="maxima">30°</span>
+                                    <span class="minima">16°</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="PrinCiudadesMiniCard">
+                            <span class="icon">
+                                <img src="./imagenes/imgDestacados/21a.png" alt="Ico">
+                            </span>
+                            <span class="colLiCardTxt">
+                                <a href="">Santa Fe</a>
+                                <span class="rowTemp">
+                                    <span class="maxima">28°</span>
+                                    <span class="minima">17°</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="PrinCiudadesMiniCard">
+                            <span class="icon">
+                                <img src="./imagenes/imgDestacados/22a.png" alt="Ico">
+                            </span>
+                            <span class="colLiCardTxt">
+                                <a href="">San Luis</a>
+                                <span class="rowTemp">
+                                    <span class="maxima">28°</span>
+                                    <span class="minima">17°</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="PrinCiudadesMiniCard">
+                            <span class="icon">
+                                <img src="./imagenes/imgDestacados/24a.png" alt="Ico">
+                            </span>
+                            <span class="colLiCardTxt">
+                                <a href="">La Pampa</a>
+                                <span class="rowTemp">
+                                    <span class="maxima">29°</span>
+                                    <span class="minima">12°</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="PrinCiudadesMiniCard">
+                            <span class="icon">
+                                <img src="./imagenes/imgDestacados/10.png" alt="Ico">
+                            </span>
+                            <span class="colLiCardTxt">
+                                <a href="">Buenos Aires</a>
+                                <span class="rowTemp">
+                                    <span class="maxima">20°</span>
+                                    <span class="minima">15°</span>
+                                </span>
+                            </span>
+                        </li>
                         <li class="PrinCiudadesMiniCard">
 
                             <span class="icon">
@@ -134,9 +197,7 @@
                                     <span class="minima">16°</span>
                                 </span>
                             </span>
-
                         </li>
-
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/21a.png" alt="Ico">
@@ -148,7 +209,6 @@
                                     <span class="minima">17°</span>
                                 </span>
                             </span>
-
                         </li>
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
@@ -161,9 +221,7 @@
                                     <span class="minima">17°</span>
                                 </span>
                             </span>
-
                         </li>
-
                         <li class="PrinCiudadesMiniCard">
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/24a.png" alt="Ico">
@@ -175,10 +233,56 @@
                                     <span class="minima">12°</span>
                                 </span>
                             </span>
-
                         </li>
                         <li class="PrinCiudadesMiniCard">
-
+                            <span class="icon">
+                                <img src="./imagenes/imgDestacados/21a.png" alt="Ico">
+                            </span>
+                            <span class="colLiCardTxt">
+                                <a href="">Santa Fe</a>
+                                <span class="rowTemp">
+                                    <span class="maxima">28°</span>
+                                    <span class="minima">17°</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="PrinCiudadesMiniCard">
+                            <span class="icon">
+                                <img src="./imagenes/imgDestacados/22a.png" alt="Ico">
+                            </span>
+                            <span class="colLiCardTxt">
+                                <a href="">San Luis</a>
+                                <span class="rowTemp">
+                                    <span class="maxima">28°</span>
+                                    <span class="minima">17°</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="PrinCiudadesMiniCard">
+                            <span class="icon">
+                                <img src="./imagenes/imgDestacados/24a.png" alt="Ico">
+                            </span>
+                            <span class="colLiCardTxt">
+                                <a href="">La Pampa</a>
+                                <span class="rowTemp">
+                                    <span class="maxima">29°</span>
+                                    <span class="minima">12°</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="PrinCiudadesMiniCard">
+                            <span class="icon">
+                                <img src="./imagenes/imgDestacados/21a.png" alt="Ico">
+                            </span>
+                            <span class="colLiCardTxt">
+                                <a href="">Santa Fe</a>
+                                <span class="rowTemp">
+                                    <span class="maxima">28°</span>
+                                    <span class="minima">17°</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="PrinCiudadesMiniCard">
                             <span class="icon">
                                 <img src="./imagenes/imgDestacados/10.png" alt="Ico">
                             </span>
@@ -189,107 +293,7 @@
                                     <span class="minima">15°</span>
                                 </span>
                             </span>
-
                         </li>
-
-                        <li class="PrinCiudadesMiniCard">
-
-                            <span class="icon">
-                                <img src="./imagenes/imgDestacados/2.png" alt="Ico">
-                            </span>
-                            <span class="colLiCardTxt">
-                                <a href="">Cordoba</a>
-                                <span class="rowTemp">
-                                    <span class="maxima">30°</span>
-                                    <span class="minima">16°</span>
-                                </span>
-                            </span>
-
-                        </li>
-
-                        <li class="PrinCiudadesMiniCard">
-                            <span class="icon">
-                                <img src="./imagenes/imgDestacados/21a.png" alt="Ico">
-                            </span>
-                            <span class="colLiCardTxt">
-                                <a href="">Santa Fe</a>
-                                <span class="rowTemp">
-                                    <span class="maxima">28°</span>
-                                    <span class="minima">17°</span>
-                                </span>
-                            </span>
-
-                        </li>
-                        <li class="PrinCiudadesMiniCard">
-                            <span class="icon">
-                                <img src="./imagenes/imgDestacados/22a.png" alt="Ico">
-                            </span>
-                            <span class="colLiCardTxt">
-                                <a href="">San Luis</a>
-                                <span class="rowTemp">
-                                    <span class="maxima">28°</span>
-                                    <span class="minima">17°</span>
-                                </span>
-                            </span>
-
-                        </li>
-
-                        <li class="PrinCiudadesMiniCard">
-                            <span class="icon">
-                                <img src="./imagenes/imgDestacados/24a.png" alt="Ico">
-                            </span>
-                            <span class="colLiCardTxt">
-                                <a href="">La Pampa</a>
-                                <span class="rowTemp">
-                                    <span class="maxima">29°</span>
-                                    <span class="minima">12°</span>
-                                </span>
-                            </span>
-
-                        </li>
-
-
-                        <li class="PrinCiudadesMiniCard">
-                            <span class="icon">
-                                <img src="./imagenes/imgDestacados/21a.png" alt="Ico">
-                            </span>
-                            <span class="colLiCardTxt">
-                                <a href="">Santa Fe</a>
-                                <span class="rowTemp">
-                                    <span class="maxima">28°</span>
-                                    <span class="minima">17°</span>
-                                </span>
-                            </span>
-
-                        </li>
-                        <li class="PrinCiudadesMiniCard">
-                            <span class="icon">
-                                <img src="./imagenes/imgDestacados/22a.png" alt="Ico">
-                            </span>
-                            <span class="colLiCardTxt">
-                                <a href="">San Luis</a>
-                                <span class="rowTemp">
-                                    <span class="maxima">28°</span>
-                                    <span class="minima">17°</span>
-                                </span>
-                            </span>
-
-                        </li>
-
-                        <li class="PrinCiudadesMiniCard">
-                            <span class="icon">
-                                <img src="./imagenes/imgDestacados/24a.png" alt="Ico">
-                            </span>
-                            <span class="colLiCardTxt">
-                                <a href="">La Pampa</a>
-                                <span class="rowTemp">
-                                    <span class="maxima">29°</span>
-                                    <span class="minima">12°</span>
-                                </span>
-                            </span>
-
-                        </li>
-
                     </ul>
                 </div>
             </section>
@@ -297,11 +301,8 @@
         <section id="mapa">
             <iframe src="https://oc.tutiempo.net/wm/es_mapa-del-tiempo_argentina_mh0.jpg" width="760" height="1000"
                 frameborder="0"></iframe>
-
-
         </section>
     </main>
-
     <footer>
         <nav class="navFooter">
             <ul class="listaNav">
@@ -316,7 +317,6 @@
                 </li>
             </ul>
         </nav>
-
     </footer>
 </body>
 
