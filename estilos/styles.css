@@ -144,12 +144,15 @@ nav ul li a {
 }
 
  .tarjetaTuCiudad{
-  width:450px;
+  max-width:500px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color:var(--bg-principalesCiudades-color);
+    width: calc(100% - 2.3rem);
+    display: flex;
+    flex-direction: column;
     
  }
 .rowInfoActual{
@@ -164,11 +167,26 @@ nav ul li a {
 }
 
  #descripcion{
-  font-size:1.5rem;
-  margin-left: 10px;
+  display: block;
   text-align: center;
-
+  margin-bottom: 10px;
+  font-size:1.5rem;
  }
+
+ #variableTitulo{
+  display: block;
+  text-align: center;
+ }
+
+ .tuCiudadIcon{
+    display: block;
+    margin-right: .5rem;
+ }
+
+ #tuCiudadIcon{
+  height:70px;
+ }
+
 
  #temp{
   font-size: 1.5rem;
@@ -179,15 +197,15 @@ nav ul li a {
 
  }
 
-
-
  #viento{
-  font-size: 1.1rem;
-  margin-left: 25px;
+  font-size: 1.1rem;  
  }
  #presion{
+  display: block;
+ 
+
   font-size: 1.1rem;
-  margin-left: 15px;
+  
  }
 
  
