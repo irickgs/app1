@@ -37,7 +37,7 @@ bordes redondeados y sombra para la sección principal */
 /* Define el contenedor de la tarjeta de ciudades con un margen izquierdo */
 #principalesCiudadesCard {
     display: flexbox;
-    margin-left: 2.3rem;
+   
 
 }
 
@@ -46,10 +46,13 @@ bordes redondeados y sombra para la sección principal */
     display: grid;
     list-style-type: none;
     grid-template-columns: repeat(auto-fit, 160px);
+    grid-template-rows: auto;
     column-gap: 18px;
     row-gap: 15px;
-    margin: 0 auto;
-    padding: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+   
 }
 
 /* Estiliza cada tarjeta de ciudad con bordes redondeados,
@@ -60,6 +63,7 @@ bordes redondeados y sombra para la sección principal */
     background-color: #93c4f1;
     display: flex;
     align-items: center;
+   
 
 }
 
