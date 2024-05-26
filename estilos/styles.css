@@ -64,6 +64,7 @@ nav ul {
   padding: 0;
   text-align: right;
 }
+
 nav ul li {
   display: inline-block;
 }
@@ -299,6 +300,10 @@ footer{
     width: 100px;  /* Ajusta el ancho del logo según sea necesario */
     height: auto; /* Mantén la proporción de la imagen */
   }
+  nav ul li {
+    display: inline;
+  }
+  
   
   
 }
