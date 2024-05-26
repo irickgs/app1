@@ -100,7 +100,8 @@ nav ul li a {
 
 .search-box {
   position: relative;
-  width: 300px;
+  width: 50vw;
+  max-width: 300px;
   margin: 0 auto;
 }
 
@@ -261,6 +262,9 @@ footer{
 
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
   /* Estilos para tablet */
+  .search-box {
+    width: 40vw; /* Ancho relativo al 40% del viewport width en dispositivos medianos */
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -283,5 +287,8 @@ footer{
   .caja {
     height: 25%;
     width: 25%;
+  }
+  .search-box {
+    width: 30vw; /* Ancho relativo al 40% del viewport width en dispositivos medianos */
   }
 }
