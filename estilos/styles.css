@@ -265,6 +265,10 @@ footer{
   .search-box {
     width: 40vw; /* Ancho relativo al 40% del viewport width en dispositivos medianos */
   }
+  .logo {
+    width: 125px;  /* Ajusta el ancho del logo según sea necesario */
+    height: auto; /* Mantén la proporción de la imagen */
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -281,6 +285,9 @@ footer{
     height: 60px;
     margin: 0 10px;
   }*/
+  .search-box {
+    width: 30vw; /* Ancho relativo al 40% del viewport width en dispositivos mobiles */
+  }
   .cajas {
     flex-direction: column; /* cambia la dirección de los elementos a vertical */
   }
@@ -288,7 +295,10 @@ footer{
     height: 25%;
     width: 25%;
   }
-  .search-box {
-    width: 30vw; /* Ancho relativo al 40% del viewport width en dispositivos medianos */
+  .logo {
+    width: 100px;  /* Ajusta el ancho del logo según sea necesario */
+    height: auto; /* Mantén la proporción de la imagen */
   }
+  
+  
 }
