@@ -303,6 +303,9 @@ footer{
   nav ul li {
     display: inline;
   }
+  .links-header a {
+    font-size: 10px;
+  }
   
   
   
