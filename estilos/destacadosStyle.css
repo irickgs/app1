@@ -12,11 +12,6 @@
    
   }
 
-/* Aplica la fuente Arial, Helvetica, sans-serif a todos los elementos del documento */
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Estiliza el título de la sección de ciudades, centrando el texto */
 #tituloCiudadesCard {
     text-align: center;
