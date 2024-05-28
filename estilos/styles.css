@@ -109,6 +109,7 @@ nav ul li a {
 .sectionTitle{
   text-align: center;
   color: var(--bg-color);
+  font-size: 3rem;
 }
 
 .search-box input[type="text"] {
@@ -270,6 +271,9 @@ footer{
     width: 125px;  /* Ajusta el ancho del logo según sea necesario */
     height: auto; /* Mantén la proporción de la imagen */
   }
+  .sectionTitle{
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -277,6 +281,10 @@ footer{
   nav {
     font-size: 45%;
   }
+  .sectionTitle{
+    font-size: 1rem;
+  }
+  
   /*#caja1,
   #caja2,
   #caja3 {
@@ -305,6 +313,9 @@ footer{
   }
   .links-header a {
     font-size: 10px;
+  }
+  .sectionTitle{
+    font-size: 1rem;
   }
   
   
