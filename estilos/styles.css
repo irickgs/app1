@@ -8,19 +8,18 @@
     --bg-input-color:#364C6B;
     --bg-principalesCiudades-color:#79c9ff71;
     --bg-prinCiudadesMiniCard-color:#93c4f1; 
-    font-family: "Caudex", serif;
 }
 
-.caudex-regular {
-  font-family: "Caudex", serif;
-  font-weight: 450;
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
 
-
 /* Elimina márgenes y rellenos por defecto */
 * {
+  font-family: "Lato", sans-serif, Arial;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +32,7 @@
 
 /* Estilos generales para el cuerpo y la página HTML */
 body,html {
-  font-family: "Caudex", serif;
+
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -146,8 +145,6 @@ nav ul li a:hover{
   color: var(--bg-color);
   font-size: 2rem;
   padding-top: 30px;
- text-decoration: underline;
-
 }
 
 /* Estilos para las tarjetas del clima */

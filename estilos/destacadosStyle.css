@@ -8,9 +8,9 @@
       --bg-input-color:#364C6B;
       --bg-principalesCiudades-color:#79c9ff71;
       --bg-prinCiudadesMiniCard-color:#93c4f1;
+}
 
-   
-  }
+
 
 /* Estiliza el título de la sección de ciudades, centrando el texto */
 #tituloCiudadesCard {
@@ -32,8 +32,6 @@ bordes redondeados y sombra para la sección principal */
 /* Define el contenedor de la tarjeta de ciudades con un margen izquierdo */
 #principalesCiudadesCard {
     display: flexbox;
-   
-
 }
 
 /* Estiliza la lista de ciudades con un diseño de cuadrícula*/
