@@ -17,7 +17,7 @@
 }
 
 .logo {
-  width: 70px;  /* Ajusta el ancho del logo según sea necesario */
+  width: 150px;  /* Ajusta el ancho del logo según sea necesario */
   height: auto; /* Mantén la proporción de la imagen */
 }
 
@@ -27,13 +27,9 @@ body,html {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /*background-image: url(/imagenes/fondo01.jpg);*/
   background-image: url(../imagenes/bg/nature-colorful-landscape-dusk-cloud.jpg);
-  /*background-image: url(../imagenes/fondo01.jpg);*/
   background-size:cover;
   background-repeat:no-repeat;
- /* background-color: #f6f1f1;*/
-
 }
 
 main{
@@ -53,9 +49,6 @@ nav {
   display:flex;
   justify-content:space-between;
   align-items: center;
-  /*padding: 10px 0;
-  font-size: 70%;
-  display: flexbox;*/
 }
 
 nav ul {
@@ -109,6 +102,7 @@ nav ul li a {
 .sectionTitle{
   text-align: center;
   color: var(--bg-color);
+ padding-top: 35px;
 }
 
 .search-box input[type="text"] {
@@ -255,10 +249,7 @@ footer{
 
 @media only screen and (min-width: 1024px) {
   /* Estilos para PC de escritorio */
-  /*#caja1 {
-    background-color: rgba(1, 21, 24, 0.767);
-    color: azure;
-  }*/
+  
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
@@ -277,15 +268,6 @@ footer{
   nav {
     font-size: 45%;
   }
-  /*#caja1,
-  #caja2,
-  #caja3 {
-    text-align: center;
-    font-size: 30%;
-    width: 60px;
-    height: 60px;
-    margin: 0 10px;
-  }*/
   .search-box {
     width: 30vw; /* Ancho relativo al 40% del viewport width en dispositivos mobiles */
   }
@@ -306,7 +288,5 @@ footer{
   .links-header a {
     font-size: 10px;
   }
-  
-  
   
 }
