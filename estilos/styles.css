@@ -1,64 +1,61 @@
-/* Establece una paleta de colores monocromática y fuente */
 :root {
-    --bg-color: #2B2E33;
+  /*Se escogio una paleta de color monocromatica*/
+  --bg-color: #2B2E33;
     --primary-color:#2063C0;
     --secondary-color:#325B96 ;
     --third-color:#0062EB ;
     --third-bis-color: #3D41C0;
     --bg-input-color:#364C6B;
     --bg-principalesCiudades-color:#79c9ff71;
-    --bg-prinCiudadesMiniCard-color:#93c4f1; 
+    --bg-prinCiudadesMiniCard-color:#93c4f1;
+    
 }
 
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-/* Elimina márgenes y rellenos por defecto */
 * {
-  font-family: "Lato", sans-serif, Arial;
   margin: 0;
   padding: 0;
 }
 
-/* Estilos para el logo */
 .logo {
-  width: 50px;  /* Ajusta el ancho del logo según sea necesario */
+  width: 70px;  /* Ajusta el ancho del logo según sea necesario */
   height: auto; /* Mantén la proporción de la imagen */
 }
 
-/* Estilos generales para el cuerpo y la página HTML */
-body,html {
 
+body,html {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  /*background-image: url(/imagenes/fondo01.jpg);*/
   background-image: url(../imagenes/bg/nature-colorful-landscape-dusk-cloud.jpg);
+  /*background-image: url(../imagenes/fondo01.jpg);*/
   background-size:cover;
   background-repeat:no-repeat;
+ /* background-color: #f6f1f1;*/
+
 }
 
-/* Estilos para la sección principal */
 main{
   min-height: 100vh;
   border: 10px solid;
   border-color: #364c6b56;
+  
 }
 
-/* Estilos para el encabezado */
 header{
   background-color:var(--bg-color);
   padding: 1vh 0;
 }
 
-/* Estilos para la barra de navegación */
+
 nav {
   display:flex;
   justify-content:space-between;
   align-items: center;
+  /*padding: 10px 0;
+  font-size: 70%;
+  display: flexbox;*/
 }
 
 nav ul {
@@ -72,45 +69,46 @@ nav ul li {
   display: inline-block;
 }
 
-/*nav ul li:first-child{
+nav ul li:first-child{
   margin-left:0;
 }
 
 nav ul li :last-child{
   margin-right: 1vw;
-}*/
+}
 
-
-/* Estilos para los enlaces de navegación */
-nav ul li a{
+nav ul li a, nav>a{
   display:block;
   padding: 10px 20px;
   text-decoration: none;
   color:var(--primary-color);
   transition:backgraund-color 0.5s ;
 }
-
 nav ul li a:hover{
   background-color:var(--bg-input-color);
 }
 
-/*nav ul li a {
+
+nav ul li a {
   color:var(--primary-color);
   text-decoration: none;
   padding: 10px 20px;
-}*/
+}
 
-/*#mainTitle{
+#mainTitle{
   color:var(--primary-color);
-}*/
+}
 
-
-/* Estilos para la caja de búsqueda */
 .search-box {
   position: relative;
   width: 50vw;
   max-width: 300px;
   margin: 0 auto;
+}
+
+.sectionTitle{
+  text-align: center;
+  color: var(--bg-color);
 }
 
 .search-box input[type="text"] {
@@ -139,15 +137,6 @@ nav ul li a:hover{
   margin-top: 2px;
 }
 
-/* Estilos para los títulos de sección */
-.sectionTitle{
-  text-align: center;
-  color: var(--bg-color);
-  font-size: 2rem;
-  padding-top: 30px;
-}
-
-/* Estilos para las tarjetas del clima */
 #weather-cards {
   display: flex;
   flex-wrap: wrap;
@@ -161,7 +150,6 @@ nav ul li a:hover{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para la tarjeta de la ciudad principal */
  .tarjetaTuCiudad{
   max-width:500px;
   margin: 20px auto;
@@ -174,15 +162,11 @@ nav ul li a:hover{
     flex-direction: column;
     
  }
-
- /* Estilos para la fila de información actual */
 .rowInfoActual{
   display: flex;
   flex-direction: row;
   align-items:stretch;
 }
-
-/* Estilos para el texto de la tarjeta */
 .cardTxt{
   width: calc(50% - 2.5rem);
   display: flex;
@@ -201,32 +185,38 @@ nav ul li a:hover{
   text-align: center;
  }
 
-/* Estilos para los íconos */
  .tuCiudadIcon{
     display: block;
-    margin-right: 0.5rem;
-    height:70px;
+    margin-right: .5rem;
  }
 
- /* estilos para las variables de la tarjeta*/
+ #tuCiudadIcon{
+  height:70px;
+ }
+
+
  #temp{
   font-size: 1.5rem;
  }
 
  #humedad{
   font-size: 1.5rem;
+
  }
 
  #viento{
   font-size: 1.1rem;  
  }
-
  #presion{
   display: block;
+ 
+
   font-size: 1.1rem;
+  
  }
 
- /* Estilos para el mapa */
+ 
+
 #mapa {
   max-width: 800px;
   margin: 20px auto;
@@ -236,7 +226,6 @@ nav ul li a:hover{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para la vista responsiva del mapa */
 .contenedorResponsivo {
   position: relative;
   overflow: hidden;
@@ -252,7 +241,7 @@ nav ul li a:hover{
   border: 0;
 }
 
-/* Estilos para el pie de página */
+
 footer{
   background-color: var(--bg-color);
   display: grid;
@@ -263,7 +252,7 @@ footer{
   margin-bottom: 0;
 }
 
-/* Media queries para diferentes tamaños de pantalla */
+
 @media only screen and (min-width: 1024px) {
   /* Estilos para PC de escritorio */
   /*#caja1 {
@@ -281,9 +270,6 @@ footer{
     width: 125px;  /* Ajusta el ancho del logo según sea necesario */
     height: auto; /* Mantén la proporción de la imagen */
   }
-  .sectionTitle{
-    font-size: 2rem;
-  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -291,10 +277,6 @@ footer{
   nav {
     font-size: 45%;
   }
-  .sectionTitle{
-    font-size: 1rem;
-  }
-  
   /*#caja1,
   #caja2,
   #caja3 {
@@ -323,9 +305,6 @@ footer{
   }
   .links-header a {
     font-size: 10px;
-  }
-  .sectionTitle{
-    font-size: 1rem;
   }
   
   
