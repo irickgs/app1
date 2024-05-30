@@ -1,13 +1,13 @@
 :root {
   /*Se escogio una paleta de color monocromatica*/
-  --bg-color: #2B2E33;
-    --primary-color:#2063C0;
-    --secondary-color:#325B96 ;
-    --third-color:#0062EB ;
-    --third-bis-color: #3D41C0;
-    --bg-input-color:#364C6B;
-    --bg-principalesCiudades-color:#79c9ff71;
-    --bg-prinCiudadesMiniCard-color:#93c4f1;
+  --bg-color: #243b6e;
+  --primary-color:#e5e6e8;
+  --secondary-color:#325B96;
+  --third-color:#350045 ;
+  --third-bis-color: #3D41C0;
+  --bg-input-color:#f1d89c;
+  --bg-principalesCiudades-color:#0c3c52;
+  --bg-prinCiudadesMiniCard-color:#65c9f0;
     
 }
 
@@ -49,6 +49,7 @@ nav {
   display:flex;
   justify-content:space-between;
   align-items: center;
+
 }
 
 nav ul {
@@ -76,9 +77,11 @@ nav ul li a, nav>a{
   text-decoration: none;
   color:var(--primary-color);
   transition:backgraund-color 0.5s ;
+  border-radius: 3px;
 }
 nav ul li a:hover{
   background-color:var(--bg-input-color);
+  color: black
 }
 
 
@@ -144,27 +147,29 @@ nav ul li a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
- .tarjetaTuCiudad{
+.tarjetaTuCiudad{
   max-width:500px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color:var(--bg-principalesCiudades-color);
-    width: calc(100% - 2.3rem);
-    display: flex;
-    flex-direction: column;
-    
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color:var(--bg-principalesCiudades-color);
+  width: calc(100% - 2.3rem);
+  display: flex;
+  flex-direction: column;   
  }
+
 .rowInfoActual{
   display: flex;
   flex-direction: row;
   align-items:stretch;
 }
+
 .cardTxt{
   width: calc(50% - 2.5rem);
   display: flex;
   flex-direction: column;
+  color: whitesmoke;
 }
 
  #descripcion{
@@ -172,6 +177,7 @@ nav ul li a {
   text-align: center;
   margin-bottom: 10px;
   font-size:1.5rem;
+  color: white;
  }
 
  #variableTitulo{
@@ -179,7 +185,7 @@ nav ul li a {
   text-align: center;
  }
 
- .tuCiudadIcon{
+.tuCiudadIcon{
     display: block;
     margin-right: .5rem;
  }
@@ -187,7 +193,6 @@ nav ul li a {
  #tuCiudadIcon{
   height:70px;
  }
-
 
  #temp{
   font-size: 1.5rem;
@@ -201,15 +206,11 @@ nav ul li a {
  #viento{
   font-size: 1.1rem;  
  }
+
  #presion{
   display: block;
- 
-
   font-size: 1.1rem;
-  
  }
-
- 
 
 #mapa {
   max-width: 800px;
@@ -235,7 +236,6 @@ nav ul li a {
   border: 0;
 }
 
-
 footer{
   background-color: var(--bg-color);
   display: grid;
@@ -244,12 +244,21 @@ footer{
   padding: 1vh 0;
   padding-bottom: 0;
   margin-bottom: 0;
+  justify-content: center;
+  gap: 25px;
+  padding: 1.7em;
+  height: 100px;
+  max-width: 100%;
+  background-image: linear-gradient(to top, #345089 0%, #408be0 100%);
 }
 
+footer p {
+  justify-content: center;
+  color: black;
+}
 
 @media only screen and (min-width: 1024px) {
-  /* Estilos para PC de escritorio */
-  
+  /* Estilos para PC de escritorio */  
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
@@ -288,5 +297,4 @@ footer{
   .links-header a {
     font-size: 10px;
   }
-  
 }
