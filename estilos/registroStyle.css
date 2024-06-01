@@ -16,3 +16,33 @@
 .submit {
     text-align: center;
 }
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+    .mb-3 {
+        margin-bottom: 10px; /* Reducir el espacio entre los elementos */
+    }
+
+    label {
+        font-size: 10px; /* Reducir el tamaño de fuente de los labels */
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+        font-size: 10px; /* Reducir el tamaño de fuente de los inputs */
+    }
