@@ -297,4 +297,28 @@ footer p {
   .links-header a {
     font-size: 10px;
   }
+  .tarjetaTuCiudad {
+    padding: 5px;
+}
+
+.tuCiudadCard {
+    align-items: center;
+}
+
+.rowInfoActual {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardTxt {
+    margin: 3px 0px;
+}
+
+.variableTitulo {
+    font-size: 0.8em;
+}
+
+#descripcion {
+    font-size: 0.8em;
+}
 }
