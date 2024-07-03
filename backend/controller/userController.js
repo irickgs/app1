@@ -2,7 +2,7 @@ const db = require('../db/db');
 
 
 
-const ObtenerTodosLosUsuarios = (req,res) => {
+const ObtenerTodasLasConsultas = (req,res) => {
     const sql = 'SELECT * FROM usuarios';
 
     db.query(sql, (err,results) => 
@@ -14,7 +14,7 @@ const ObtenerTodosLosUsuarios = (req,res) => {
     });
 }
 
-const ObtenerUsuarioPorId = (req,res) => 
+const ObtenerConsultasPorId = (req,res) => 
 {
     const {id} = req.params;
     const sql = 'SELECT * FROM usuarios WHERE id = ?'
@@ -28,7 +28,7 @@ const ObtenerUsuarioPorId = (req,res) =>
 
 }
 
-const crearUsuario = (req,res) => 
+const crearConsulta = (req,res) => 
 {
     const {nombre,apellido,mail} = req.body;
 
@@ -49,7 +49,7 @@ const crearUsuario = (req,res) =>
 
 }
 
-const ActualizarUsuario = (req,res) => 
+const ActualizarConsulta = (req,res) => 
 {
     const {id} = req.params;
     const {nombre,apellido,mail} = req.body;
@@ -68,7 +68,7 @@ const ActualizarUsuario = (req,res) =>
 
 
 
-const BorrarUsuario = (req,res) => 
+const BorrarConsulta = (req,res) => 
 {
     const {id} = req.params;
 
@@ -89,9 +89,9 @@ const BorrarUsuario = (req,res) =>
 
 module.exports = 
 {
-    ObtenerTodosLosUsuarios,
-    ObtenerUsuarioPorId,
-    crearUsuario,
-    ActualizarUsuario,
-    BorrarUsuario
+    ObtenerTodasLasConsultas,
+    ObtenerConsultasPorId,
+    crearConsulta,
+    ActualizarConsulta,
+    BorrarConsulta
 }

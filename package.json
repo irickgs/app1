@@ -1,0 +1,21 @@
+{
+  "name": "grupo15_24256.github.io",
+  "version": "1.0.0",
+  "description": "Proyecto Grupo 15 | CODO A CODO 2024 | Full Stack Node.js",
+  "main": " node index.js",
+  "scripts": {
+     "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Grupo15-24256",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.10.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
