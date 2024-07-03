@@ -1,44 +1,38 @@
 const mySql = require('mysql2');
 const connection = mySql.createConnection(
     {
-        host : 'localhost',
+        host: 'localhost',
         user: 'root',
-        password: 'MICONTRASEÑAAA',
+        password: 'root',
         database: 'usuarios_db'
     });
 
 
-    connection.connect((err) =>
-    {
-        if(err)
-        {
-            console.error("Error conectando a la base de datos",err);
+connection.connect((err) => {
+    if (err) {
+        console.error("Error conectando a la base de datos", err);
+        return;
+    }
+
+
+    console.log("Conectado a la base de datos");
+
+
+    connection.query('CREATE DATABASE IF NOT EXISTS usuarios_db', (err, results) => {
+        if (err) {
+            console.log("Error creando la base de datos");
             return;
         }
 
 
-        console.log("Conectado a la base de datos");
+        console.log("Base de datos asegurada");
 
 
-        connection.query('CREATE DATABASE IF NOT EXISTS usuarios_db', (err,results) =>
-        {
-            if(err)
-            {
-                console.log("Error creando la base de datos");
+        connection.changeUser({ database: 'usuarios_db' }, (err) => {
+            if (err) {
+                console.error("Error al cambiar a usuarios_db", err);
                 return;
             }
-
-
-            console.log("Base de datos asegurada");
-
-
-            connection.changeUser({database : 'usuarios_db'}, (err)=>
-            {
-                if(err)
-                {
-                    console.error("Error al cambiar a usuarios_db",err);
-                    return;
-                }
 
 
 
@@ -52,11 +46,9 @@ const connection = mySql.createConnection(
             `;
 
 
-            connection.query(createTableQuery,(err,results) =>
-            {
-                if(err)
-                {
-                    console.log("Error creando la tabla: " , err);
+            connection.query(createTableQuery, (err, results) => {
+                if (err) {
+                    console.log("Error creando la tabla: ", err);
                     return;
                 }
 

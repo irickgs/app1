@@ -2,18 +2,18 @@
 
 const express = require('express');
 const app = express();
-let port = process.env.PORT || 3000;
+let port = 3000;
 
-const consultaRouter = require('./routes/consulta');
+const usuariosRouter = require('./routes/usuarios');
 
 app.use(express.json());
 
-app.use('/consulta',usuariosRouter);
+app.use('/usuarios',usuariosRouter);
 
-/**app.get('/', (req,res) => 
+app.get('/', (req,res) => 
 {
     res.send('HOLA DESDE EL PUERTO LOCALHOST:3000');
-});**/
+});
 
 app.listen(port , () => 
 {
