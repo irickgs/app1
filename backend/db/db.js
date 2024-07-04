@@ -4,7 +4,8 @@ const connection = mySql.createConnection(
         host: 'localhost',
         user: 'root',
         password: 'root',
-        database: 'usuarios_db'
+        database: 'usuarios_db',
+        multipleStatements: true
     });
 
 
@@ -42,7 +43,14 @@ connection.connect((err) => {
                     nombre VARCHAR(100) NOT NULL,
                     apellido VARCHAR(100) NOT NULL,
                     mail VARCHAR(255) NOT NULL
-                );            
+                ); 
+
+                 CREATE TABLE IF NOT EXISTS usuarios5 (
+                    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+                    nombre VARCHAR(255) NOT NULL,
+                    email VARCHAR(255) NOT NULL UNIQUE,
+                    acepta TINYINT(1) NOT NULL,
+                    creado DATETIME DEFAULT CURRENT_TIMESTAMP);       
             `;
 
 
