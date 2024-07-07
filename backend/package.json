@@ -6,9 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Grupo 15",
   "license": "ISC",
-  "description": "",
+  "description": "Proyecto Final Curso Nodejs",
   "dependencies": {
     "express": "^4.19.2",
     "mysql2": "^3.10.2"
