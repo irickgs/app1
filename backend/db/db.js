@@ -10,17 +10,19 @@ const connection = mySql.createConnection(
     });
 
 
-connection.connect((err) => {
-    if (err) {
-        console.error("Error conectando a la base de datos", err);
-        return;
-    }
+    connection.connect((err) => 
+    {
+        if (err) 
+        {
+            console.error("Error conectando a la base de datos", err);
+            return;
+        }
 
 
-    console.log("Conectado a la base de datos");
+        console.log("Conectado a la base de datos");
 
 
-    connection.query('CREATE DATABASE IF NOT EXISTS usuarios_db', (err, results) => {
+        connection.query('CREATE DATABASE IF NOT EXISTS usuarios_db', (err, results) => {
         if (err) {
             console.log("Error creando la base de datos");
             return;

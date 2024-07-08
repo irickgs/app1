@@ -1,5 +1,5 @@
 const db = require('../db/db');
-
+const path = require('path');
 
 
 const ObtenerTodosLosUsuarios = (req, res) => {
@@ -28,7 +28,8 @@ const ObtenerUsuarioPorId = (req, res) => {
 
 const crearUsuario = (req, res) => {
     const { asunto, nombre, fk_id_ciudad, email, mensaje, acepta } = req.body;
-
+    console.log('Datos recibidos:', req.body);
+    //const aceptaValor = acepta === '1' ? 1 : 0;
     const sql = 'INSERT INTO contactos (asunto, nombre, fk_id_ciudad, email, mensaje, acepta) VALUES (?, ?, ?, ?, ?, ?)';
 
     db.query(sql, [asunto, nombre, fk_id_ciudad, email, mensaje, acepta], (err, result) => {

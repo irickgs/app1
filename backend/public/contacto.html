@@ -44,39 +44,38 @@
     <main>
         <section id="form-wrapper">
             <h3 class="registroTitulo , mb-4">Contacto</h3>
-            <form action="#" id="form-contacto" method="post" novalidate>
+            <form action="/usuarios" id="form-contacto" method="post" novalidate>
                 <div class="form-container">
                     <div class="mb-3">
                         <label for="asunto"> Introduce un asunto</label><br>
-                        <input class="form-control" type="text" id="asunto" name="asunto" placeholder="Asunto"
-                            requiered>
+                        <input class="form-control" type="text" id="asunto" name="asunto" placeholder="Asunto" required>
                     </div>
                     <div class="mb-3">
                         <label for="name">Nombre</label><br>
-                        <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre" requiered>
+                        <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                     </div>
                     <div class="mb-3">
-                        <label for="city">Seleccioná tu ciudad</label><br>
-                        <select name="ciudades" id="nombre-ciudades">
-                            <option value="">Otra</option>
-                            <option value="">Bahía Blanca</option>
-                            <option value="">Capital Federal</option>
-                            <option value="">Catamarca</option>
-                            <option value="">Córdoba</option>
+                        <label for="fk_id_ciudad">Seleccioná tu ciudad</label><br>
+                        <select name="fk_id_ciudad" id="fk_id_ciudad">
+                            <option value="8">Otra</option>
+                            <option value="9">Bahía Blanca</option>
+                            <option value="10">Capital Federal</option>
+                            <option value="11">Catamarca</option>
+                            <option value="12">Córdoba</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label for="email">Introduce un e-mail</label><br>
-                        <input class="form-control" type="text" id="email" name="email" placeholder="Email" requiered>
+                        <input class="form-control" type="text" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="mb-3">
                         <label for="mensaje">Mensaje</label> <br>
-                        <textarea name="message" rows="10" cols="55" id="mensaje">Ingresá tu consulta aquí...</textarea>
+                        <textarea name="mensaje" rows="10" cols="55" id="mensaje">Ingresá tu consulta aquí...</textarea>
                     </div>
 
                     <div class="form-check">
-                        <label class="form-check-label" for="checkbox">Acepto los términos y condiciones</label>
-                        <input class="form-check-input" type="checkbox" id="terms" name="terms" required><br><br>
+                        <label class="form-check-label" for="acepta">Acepto los términos y condiciones</label>
+                        <input class="form-check-input" type="checkbox" id="acepta" name="acepta" value=1 required><br><br>
                     </div>
                     <div class="submit">
                         <button class="btn btn-primary" type="submit">Enviar</button>
@@ -98,6 +97,7 @@
         <p>© 2024 Clima 360</p>
     </footer>
     <script src="./script/formValidation.js"></script>
+        
 </body>
 
 </html>

@@ -3,18 +3,25 @@
 const express = require('express');
 const app = express();
 let port = 3000;
+const path = require('path');// para trabajar con rutas de archivos y directorios
 
 const usuariosRouter = require('./routes/usuarios');
+const cors = require('cors');
 
-app.use(express.static('public'));
+//app.use(express.static('public'));
+app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 
 app.use('/usuarios',usuariosRouter);
 
-app.get('/', (req,res) => 
-{
-    res.send('HOLA DESDE EL PUERTO LOCALHOST:3000');
-});
+app.use(express.static(path.join(__dirname,'public')));
+
+
+//app.get('/', (req,res) => 
+//{
+//    res.send('HOLA DESDE EL PUERTO LOCALHOST:3000');
+//});
 
 app.listen(port , () => 
 {
