@@ -3,7 +3,7 @@ const db = require('../db/db');
 
 
 const ObtenerTodosLosUsuarios = (req, res) => {
-    const sql = 'SELECT * FROM usuarios_db';//devuelve un array de objetos
+    const sql = 'SELECT * FROM contactos';//devuelve un array de objetos
 
     db.query(sql, (err, results) => {
         if (err)// toma valor de null si no hay hay error, y si hay error toma el valor del mismo
@@ -15,7 +15,7 @@ const ObtenerTodosLosUsuarios = (req, res) => {
 
 const ObtenerUsuarioPorId = (req, res) => {
     const { id } = req.params;//destructuring de un objeto que tiene atributo id
-    const sql = 'SELECT * FROM usuarios_db WHERE id = ?'
+    const sql = 'SELECT * FROM contactos WHERE id_contacto = ?'
 
     db.query(sql, [id], (err, result) => {
         if (err)
@@ -27,11 +27,11 @@ const ObtenerUsuarioPorId = (req, res) => {
 }
 
 const crearUsuario = (req, res) => {
-    const { nombre, apellido, mail } = req.body;
+    const { asunto, nombre, fk_id_ciudad, email, mensaje, acepta } = req.body;
 
-    const sql = 'INSERT INTO usuarios_db (nombre,apellido,mail) VALUES (?,?,?)';
+    const sql = 'INSERT INTO contactos (asunto, nombre, fk_id_ciudad, email, mensaje, acepta) VALUES (?, ?, ?, ?, ?, ?)';
 
-    db.query(sql, [nombre, apellido, mail], (err, result) => {
+    db.query(sql, [asunto, nombre, fk_id_ciudad, email, mensaje, acepta], (err, result) => {
         if (err)
             throw err;
 
