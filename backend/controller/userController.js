@@ -49,11 +49,11 @@ const crearUsuario = (req, res) => {
 
 const ActualizarUsuario = (req, res) => {
     const { id } = req.params;
-    const { nombre, apellido, mail } = req.body;
+//    const { nombre, apellido, mail } = req.body;
+    const { asunto, nombre, fk_id_ciudad, email, mensaje, acepta } = req.body;
+    const sql = 'UPDATE contactos SET asunto = ?, nombre = ? , fk_id_ciudad = ?, email = ?, mensaje = ?, acepta = ? WHERE id_contacto = ?'
 
-    const sql = 'UPDATE usuarios_db SET nombre = ?, apellido = ? , mail = ? WHERE id = ?'
-
-    db.query(sql, [nombre, apellido, mail, id], (err, result) => {
+    db.query(sql, [asunto, nombre, fk_id_ciudad, email, mensaje, acepta, id], (err, result) => {
         if (err) throw err;
 
         res.json({
@@ -68,7 +68,7 @@ const ActualizarUsuario = (req, res) => {
 const BorrarUsuario = (req, res) => {
     const { id } = req.params;
 
-    const sql = 'DELETE FROM usuarios_db WHERE id = ?';
+    const sql = 'DELETE FROM contactos WHERE id_contacto = ?';
 
     db.query(sql, [id], (err, result) => {
         if (err) throw err;
