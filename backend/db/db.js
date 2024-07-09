@@ -41,14 +41,7 @@ const connection = mySql.createConnection(
 
 // La tabla usuarios_db, borrarla cuando no se use mas.
             const createTableQuery = `                
-                CREATE TABLE IF NOT EXISTS usuarios_db ( 
-                    id INT AUTO_INCREMENT PRIMARY KEY,
-                    nombre VARCHAR(100) NOT NULL,
-                    apellido VARCHAR(100) NOT NULL,
-                    mail VARCHAR(255) NOT NULL
-                ); 
-
-                CREATE TABLE IF NOT EXISTS usuarios (
+                    CREATE TABLE IF NOT EXISTS usuarios (
                     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
                     nombre VARCHAR(255) NOT NULL,
                     email VARCHAR(255) NOT NULL UNIQUE,
