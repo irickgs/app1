@@ -40,15 +40,7 @@ const connection = mySql.createConnection(
 
 
 // La tabla usuarios_db, borrarla cuando no se use mas.
-            const createTableQuery = `                
-                    CREATE TABLE IF NOT EXISTS usuarios (
-                    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
-                    nombre VARCHAR(255) NOT NULL,
-                    email VARCHAR(255) NOT NULL UNIQUE,
-                    acepta BOOLEAN NOT NULL,
-                    creado DATETIME DEFAULT CURRENT_TIMESTAMP
-                );
-                
+            const createTableQuery = `                   
                 CREATE TABLE IF NOT EXISTS ciudades (
                     id_ciudad INT AUTO_INCREMENT PRIMARY KEY,
                     nombre VARCHAR(255) NOT NULL
@@ -58,29 +50,18 @@ const connection = mySql.createConnection(
                     id_asunto INT AUTO_INCREMENT PRIMARY KEY,
                     nombre VARCHAR(255) NOT NULL
                 );
-                
-                CREATE TABLE IF NOT EXISTS mensajes (
-                    id_mensaje INT AUTO_INCREMENT PRIMARY KEY,
-                    mensaje TEXT NOT NULL,
-                    fk_id_usuario INT,
-                    fk_id_asunto INT,
-                    fk_id_ciudad INT,
-                    creado DATETIME DEFAULT CURRENT_TIMESTAMP,
-                    FOREIGN KEY (fk_id_usuario) REFERENCES usuarios(id_usuario),
-                    FOREIGN KEY (fk_id_asunto) REFERENCES asuntos(id_asunto),
-                    FOREIGN KEY (fk_id_ciudad) REFERENCES ciudades(id_ciudad)
-                ); 
-                
+                        
                 CREATE TABLE IF NOT EXISTS contactos (
                     id_contacto INT AUTO_INCREMENT PRIMARY KEY,
-                    asunto VARCHAR(255) NOT NULL,
+                    fk_id_asunto INT,
                     nombre VARCHAR(255) NOT NULL,
                     fk_id_ciudad INT,
                     email VARCHAR(255) NOT NULL UNIQUE,
                     mensaje TEXT NOT NULL,
                     acepta BOOLEAN NOT NULL,
                     creado DATETIME DEFAULT CURRENT_TIMESTAMP,
-                    FOREIGN KEY (fk_id_ciudad) REFERENCES ciudades(id_ciudad)
+                    FOREIGN KEY (fk_id_ciudad) REFERENCES ciudades(id_ciudad),
+                    FOREIGN KEY (fk_id_asunto) REFERENCES asuntos(id_asunto)
                 );
 
             `;
