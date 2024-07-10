@@ -47,9 +47,15 @@
             <form action="/usuarios" id="form-contacto" method="post" novalidate>
                 <div class="form-container">
                     <div class="mb-3">
-                        <label for="asunto"> Introduce un asunto</label><br>
-                        <input class="form-control" type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                        <label for="fk_id_asunto">Selecciona un Asunto</label><br>
+                        <select name="fk_id_asunto" id="fk_id_asunto">
+                            <option value="1">Consulta</option>
+                            <option value="2">Mensaje</option>
+                            <option value="3">Problema</option>
+                            <option value="4">Otro</option>
+                        </select>
                     </div>
+                    
                     <div class="mb-3">
                         <label for="name">Nombre</label><br>
                         <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -57,11 +63,11 @@
                     <div class="mb-3">
                         <label for="fk_id_ciudad">Seleccioná tu ciudad</label><br>
                         <select name="fk_id_ciudad" id="fk_id_ciudad">
-                            <option value="8">Otra</option>
-                            <option value="9">Bahía Blanca</option>
-                            <option value="10">Capital Federal</option>
-                            <option value="11">Catamarca</option>
-                            <option value="12">Córdoba</option>
+                            <option value="1">Otra</option>
+                            <option value="2">Bahía Blanca</option>
+                            <option value="3">Capital Federal</option>
+                            <option value="4">Catamarca</option>
+                            <option value="5">Córdoba</option>
                         </select>
                     </div>
                     <div class="mb-3">

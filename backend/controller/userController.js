@@ -27,12 +27,12 @@ const ObtenerUsuarioPorId = (req, res) => {
 }
 
 const crearUsuario = (req, res) => {
-    const { asunto, nombre, fk_id_ciudad, email, mensaje, acepta } = req.body;
+    const { fk_id_asunto, nombre, fk_id_ciudad, email, mensaje, acepta } = req.body;
     console.log('Datos recibidos:', req.body);
     //const aceptaValor = acepta === '1' ? 1 : 0;
-    const sql = 'INSERT INTO contactos (asunto, nombre, fk_id_ciudad, email, mensaje, acepta) VALUES (?, ?, ?, ?, ?, ?)';
+    const sql = 'INSERT INTO contactos (fk_id_asunto, nombre, fk_id_ciudad, email, mensaje, acepta) VALUES (?, ?, ?, ?, ?, ?)';
 
-    db.query(sql, [asunto, nombre, fk_id_ciudad, email, mensaje, acepta], (err, result) => {
+    db.query(sql, [fk_id_asunto, nombre, fk_id_ciudad, email, mensaje, acepta], (err, result) => {
         if (err)
             throw err;
 
@@ -49,11 +49,10 @@ const crearUsuario = (req, res) => {
 
 const ActualizarUsuario = (req, res) => {
     const { id } = req.params;
-//    const { nombre, apellido, mail } = req.body;
-    const { asunto, nombre, fk_id_ciudad, email, mensaje, acepta } = req.body;
-    const sql = 'UPDATE contactos SET asunto = ?, nombre = ? , fk_id_ciudad = ?, email = ?, mensaje = ?, acepta = ? WHERE id_contacto = ?'
+    const { fk_id_asunto, nombre, fk_id_ciudad, email, mensaje, acepta } = req.body;
+    const sql = 'UPDATE contactos SET fk_id_asunto = ?, nombre = ? , fk_id_ciudad = ?, email = ?, mensaje = ?, acepta = ? WHERE id_contacto = ?'
 
-    db.query(sql, [asunto, nombre, fk_id_ciudad, email, mensaje, acepta, id], (err, result) => {
+    db.query(sql, [fk_id_asunto, nombre, fk_id_ciudad, email, mensaje, acepta, id], (err, result) => {
         if (err) throw err;
 
         res.json({
