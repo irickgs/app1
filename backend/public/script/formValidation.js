@@ -72,6 +72,7 @@ function limpiarMensajeError() {
         const data = 
         {
             asunto: formData.get('asunto'),
+            servicio: formData.get('fk_id_servicio'), 
             nombre: formData.get('nombre'),
             fk_id_ciudad: formData.get('fk_id_ciudad'),
             email: formData.get('email')

@@ -50,10 +50,14 @@ const connection = mySql.createConnection(
                     id_asunto INT AUTO_INCREMENT PRIMARY KEY,
                     nombre VARCHAR(255) NOT NULL
                 );
-                        
+                CREATE TABLE IF NOT EXISTS servicio (
+                    id_servicio INT AUTO_INCREMENT PRIMARY KEY,
+                    nombre VARCHAR(255) NOT NULL
+                );       
                 CREATE TABLE IF NOT EXISTS contactos (
                     id_contacto INT AUTO_INCREMENT PRIMARY KEY,
                     fk_id_asunto INT,
+                    fk_id_servicio INT,
                     nombre VARCHAR(255) NOT NULL,
                     fk_id_ciudad INT,
                     email VARCHAR(255) NOT NULL UNIQUE,
@@ -61,7 +65,8 @@ const connection = mySql.createConnection(
                     acepta BOOLEAN NOT NULL,
                     creado DATETIME DEFAULT CURRENT_TIMESTAMP,
                     FOREIGN KEY (fk_id_ciudad) REFERENCES ciudades(id_ciudad),
-                    FOREIGN KEY (fk_id_asunto) REFERENCES asuntos(id_asunto)
+                    FOREIGN KEY (fk_id_asunto) REFERENCES asuntos(id_asunto),
+                    FOREIGN KEY (fk_id_servicio) REFERENCES servicio(id_servicio)
                 );
 
             `;
